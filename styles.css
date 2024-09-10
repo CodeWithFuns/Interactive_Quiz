@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#quiz-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+}
+
+#scoreboard {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#timer {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:green;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: darkgreen;
+}
+
+.option.selected {
+    background-color: darkgreen;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buttons button:hover {
+    background-color: darkblue;
+}
